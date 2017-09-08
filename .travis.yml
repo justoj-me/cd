@@ -6,6 +6,8 @@ before_install:
   - cd server
   - ls
 install:
+  - cd ../client
   - ls
 script:
+  - cd ..
   - ls
