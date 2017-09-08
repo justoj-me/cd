@@ -4,13 +4,8 @@ language: node_js
 node_js:
   - "6"
 before_install:
-  - npm install n
-  - sudo ./node_modules/.bin/n stable
-  - rm -rf ~/.nvm
-  - npm --version
-  - node --version
-  - sudo npm --version
-  - npm install
+  - echo $(which npm)
+  - sudo $(which npm) install
   - cd server
   - npm --version
   - sudo $(which npm) --version
