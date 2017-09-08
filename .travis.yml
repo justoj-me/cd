@@ -5,7 +5,8 @@ node_js:
   - "6"
 before_install:
   - echo $(which npm)
-  - sudo $(which npm) install
+  - echo $(type -P npm)
+  - sudo $(type -P npm) install
   - cd server
   - npm --version
   - sudo $(which npm) --version
