@@ -8,6 +8,7 @@ before_install:
   - echo $(which node)
   - echo $(type -P node)
   - echo $(type -P npm)
+  - sudo ln -s $(type -P node) /usr/bin/node
   - sudo $(type -P npm) install
   - cd server
   - npm --version
