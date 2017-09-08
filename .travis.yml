@@ -6,6 +6,8 @@ node_js:
 before_install:
   - npm i -g npm@5.1.0
   - npm --version
+  - sudo npm --version
+  - npm install
   - cd server
   - npm --version
   - sudo npm --version
