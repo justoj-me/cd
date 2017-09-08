@@ -1,0 +1,11 @@
+dist: xenial
+language: node_js
+node_js:
+  - "6"
+before_install:
+  - cd server
+  - ls
+install:
+  - ls
+script:
+  - ls
