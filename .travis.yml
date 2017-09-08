@@ -8,6 +8,10 @@ before_install:
   - npm i -g npm@5.1.0
   - npm --version
   - echo $(which npm)
+  - ls /usr/bin
+  - ls /usr/bin/env
+  - sudo ln -s /usr/bin/nodejs /usr/bin/node
+  - $(which npm) --version
   - sudo $(which npm) --version
   - npm install
   - cd server
