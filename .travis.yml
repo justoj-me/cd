@@ -1,9 +1,14 @@
 dist: xenial
+sudo: required
 language: node_js
 node_js:
   - "6"
 before_install:
+  - npm i -g npm@5.1.0
+  - npm --version
   - cd server
+  - npm --version
+  - sudo npm --version
   - ls
 install:
   - cd ../client
