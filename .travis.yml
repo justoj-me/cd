@@ -9,10 +9,12 @@ before_install:
   - echo $(type -P node)
   - echo $(type -P npm)
   - sudo ln -s $(type -P node) /usr/bin/node
-  - sudo $(type -P npm) install
+  - sudo $(which npm) install
   - cd server
   - npm --version
   - sudo $(which npm) --version
+  - sudo $(which npm) install
+  - sudo $(which npm) run test
   - ls
 install:
   - cd ../client
