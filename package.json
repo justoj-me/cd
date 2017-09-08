@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"hello\""
-  },": "./node_modules/.bin/mocha --reporter spec $(find tests/sandbox/specs -name 'java.spec.js')",
-    "lint": "./node_modules/.bin/eslint -c .esl
+  },
   "keywords": [
     "test"
   ],
