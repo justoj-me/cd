@@ -4,17 +4,15 @@ language: node_js
 node_js:
   - "6"
 before_install:
+  - echo $(which npm)
   - npm i -g npm@5.1.0
   - npm --version
-  - sudo ln -s /usr/local/bin/node /usr/bin/node
-  - sudo ln -s /usr/local/lib/node /usr/lib/node
-  - sudo ln -s /usr/local/bin/npm /usr/bin/npm
-  - sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
-  - sudo npm --version
+  - echo $(which npm)
+  - sudo $(which npm) --version
   - npm install
   - cd server
   - npm --version
-  - sudo npm --version
+  - sudo $(which npm) --version
   - ls
 install:
   - cd ../client
